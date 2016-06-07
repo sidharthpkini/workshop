@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="{%  static 'css/bootstrap.min.css' %}" />
+    <script src="{%  static 'js/jquery.min.js' %}" > </script>
+    <script src="{%  static 'js/bootstrap.js' %}" ></script>
+</head>
+
+<body style="background-image: url({% static "image/images3.jpg" %});background-repeat:no-repeat;background-size:100%;height: 140px;display:block;padding:0 !important;margin:0;" >
+
+{% include 'navbar.html' %}
+
+{% block body %}
+
+{% endblock body %}
+
+</html>
